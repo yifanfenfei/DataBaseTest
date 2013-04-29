@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+{
+    IBOutlet UIButton* inserBtn;
+    IBOutlet UIButton * selectBtn;
+    IBOutlet UIButton * deleteBtn;
+    IBOutlet UIImageView* imageView;
+}
+@property(nonatomic,strong)UIButton* inserBtn,* selectBtn,* deleteBtn;
+@property(nonatomic,strong)UIImageView* imageView;
+-(IBAction)btnPressed:(UIButton*)sender;
 @end

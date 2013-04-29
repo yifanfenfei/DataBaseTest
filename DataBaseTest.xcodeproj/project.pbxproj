@@ -18,6 +18,8 @@
 		CAABA3B416DC47AF009511EC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAABA3B316DC47AF009511EC /* Default-568h@2x.png */; };
 		CAABA3B716DC47AF009511EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAABA3B616DC47AF009511EC /* ViewController.m */; };
 		CAABA3BA16DC47AF009511EC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAABA3B816DC47AF009511EC /* ViewController.xib */; };
+		CAABA3C316DC52F6009511EC /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = CAABA3C216DC52F6009511EC /* sun.png */; };
+		CAB0F2B11703E9F0005598E6 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB0F2B01703E9F0005598E6 /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		CAABA3B516DC47AF009511EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CAABA3B616DC47AF009511EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CAABA3B916DC47AF009511EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CAABA3C216DC52F6009511EC /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
+		CAB0F2B01703E9F0005598E6 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB0F2B11703E9F0005598E6 /* libsqlite3.0.dylib in Frameworks */,
 				CAABA39E16DC47AF009511EC /* UIKit.framework in Frameworks */,
 				CAABA3A016DC47AF009511EC /* Foundation.framework in Frameworks */,
 				CAABA3A216DC47AF009511EC /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +61,8 @@
 		CAABA38E16DC47AF009511EC = {
 			isa = PBXGroup;
 			children = (
+				CAB0F2B01703E9F0005598E6 /* libsqlite3.0.dylib */,
+				CAABA3C216DC52F6009511EC /* sun.png */,
 				CAABA3A316DC47AF009511EC /* DataBaseTest */,
 				CAABA39C16DC47AF009511EC /* Frameworks */,
 				CAABA39A16DC47AF009511EC /* Products */,
@@ -163,6 +170,7 @@
 				CAABA3B216DC47AF009511EC /* Default@2x.png in Resources */,
 				CAABA3B416DC47AF009511EC /* Default-568h@2x.png in Resources */,
 				CAABA3BA16DC47AF009511EC /* ViewController.xib in Resources */,
+				CAABA3C316DC52F6009511EC /* sun.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +218,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -225,6 +234,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -239,6 +249,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -247,6 +258,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -256,10 +268,12 @@
 		CAABA3BE16DC47AF009511EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DataBaseTest/DataBaseTest-Prefix.pch";
 				INFOPLIST_FILE = "DataBaseTest/DataBaseTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -267,10 +281,12 @@
 		CAABA3BF16DC47AF009511EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DataBaseTest/DataBaseTest-Prefix.pch";
 				INFOPLIST_FILE = "DataBaseTest/DataBaseTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -294,6 +310,7 @@
 				CAABA3BF16DC47AF009511EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
